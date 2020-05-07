@@ -1,0 +1,10 @@
+org\afdemp\studentmvc\services\StudentImpl.class
+org\afdemp\studentmvc\services\IStudent.class
+org\afdemp\studentmvc\entities\Student.class
+org\afdemp\studentmvc\configuration\AppInitializer.class
+org\afdemp\studentmvc\controllers\StudentController.class
+org\afdemp\studentmvc\configuration\HibernateConfiguration.class
+org\afdemp\studentmvc\configuration\AppConfig.class
+org\afdemp\studentmvc\dao\AbstractDao.class
+org\afdemp\studentmvc\dao\StudentDaoImpl.class
+org\afdemp\studentmvc\dao\IStudentDao.class
