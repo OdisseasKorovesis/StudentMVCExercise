@@ -45,7 +45,7 @@ public class StudentController {
         return "newstudent";
     }
 
-    @RequestMapping(value = {"/newstudent"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/new"}, method = RequestMethod.POST)
     public String saveStudent(ModelMap view, Student student) {
         studentService.saveStudent(student);
         view.addAttribute("message", new String("Student " + student.getFirstName() + " " + student.getLastName() + " has been registered succesfully!"));

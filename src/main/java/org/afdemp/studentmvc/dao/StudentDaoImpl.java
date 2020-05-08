@@ -16,18 +16,18 @@ import org.springframework.stereotype.Repository;
  * @author Odisseas KD
  */
 @Repository("studentDao")
-public class StudentDaoImpl extends AbstractDao<Integer, Student> implements IStudentDao{
+public class StudentDaoImpl extends AbstractDao<Integer, Student> implements IStudentDao {
 
     @Override
     public List<Student> findAllStudents() {
         Criteria criteria = createEntityCriteria();
-        return (List<Student>)criteria.list();
-    } 
+        return (List<Student>) criteria.list();
+    }
 
     @Override
     public void saveStudent(Student student) {
         persist(student);
-        }
+    }
 
     @Override
     public Student findById(int id) {
@@ -37,10 +37,8 @@ public class StudentDaoImpl extends AbstractDao<Integer, Student> implements ISt
     @Override
     public void deleteStudentById(int id) {
         Query query = getSession().createSQLQuery("delete from students where id = :id");
-		query.setInteger("id", id);
-		query.executeUpdate();
+        query.setInteger("id", id);
+        query.executeUpdate();
     }
-    
-    
-    
+
 }
